@@ -1,0 +1,136 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 2.5rem;
+            padding: 100px 8% 120px;
+            background: #f3f3f3;
+        }
+
+        .content-text {
+            margin-bottom: 10px;
+        }
+
+        .content-text h2 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 0px 1px 1px black;
+        }
+
+        .content-text h2 span {
+            color: #388b6f;
+        }
+
+        .content-text p {
+            font-weight: bold;
+        }
+
+        .list {
+            margin-top: 16px;
+        }
+
+        .list li {
+            margin-bottom: 12px;
+        }
+
+        .list li a {
+            display: block;
+            color: #388b6f;
+            font-weight: bold;
+            font-size: 15px;
+            transition: 0.3s ease;
+        }
+
+        .contact-form form {
+            position: relative;
+        }
+
+        .contact-form form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            background: white;
+            color: black;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form textarea {
+            resize: none;
+            height: 160px;
+        }
+
+        .contact-form .submit {
+            display: inline-block;
+            font-size: 15px;
+            background: #388b6f;
+            color: white;
+            width: 160px;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .contact-form .submit:hover {
+            width: 175px;
+        }
+
+        @media (max-width:920px) {
+            .contact {
+                grid-template-columns: 1fr;
+                max-width: 100%;
+            }
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="contact" id="contact">
+        <div class="content-text">
+            <h2><span>Contact & Email us</span></h2>
+            <p></p>
+            <div class="list">
+                <ul>
+                    <li><a href="tel:+919892352438">Contact: +919892352438</a></li>
+                    <li><a href="mailto:singhrajat6246@gmail.com">Email: singhrajat6246@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-form">
+                <form id="contactForm" action="https://formspree.io/f/xeoalaze" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="tel" name="phone" placeholder="Phone" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" cols="35" rows="10" placeholder="Message" required></textarea>
+                <input type="submit" value="Send" class="submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <h2>Don't forget to follow me here...</h2>
+        <div class="social">
+            <!-- <i class="fa-brands fa-square-instagram media"></i> -->
+             <a href="https://www.linkedin.com/in/rajat-singh-04b91a25a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                    class="fa-brands fa-linkedin media"></i></a>
+                       <a href="https://github.com/Rajat-Dharmendra-singh"><i class="fa-brands fa-github media"></i></a> 
+        </div>
+    </footer>
+</body>
+</html>
