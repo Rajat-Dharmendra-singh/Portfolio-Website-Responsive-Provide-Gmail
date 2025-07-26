@@ -1,2 +1,2 @@
-# Portfolio-Website-Responsive-Provide-Gmail-to-the-User
+# Portfolio-Website-Responsive-Provide-Gmail
 Config files for my GitHub profile.
