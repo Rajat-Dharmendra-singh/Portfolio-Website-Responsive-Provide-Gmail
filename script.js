@@ -1,5 +1,5 @@
 var typed = new Typed('#element', {
-    strings: ['Fronted developer Data Science and Data analysts Developer.'],
+    strings: ['Fronted developer Data Science and Data analyst Developer.'],
     typeSpeed: 70,
 });
 const prevEle = document.querySelector(".prev")
@@ -33,6 +33,7 @@ function updateImg() {
         updateImg()
     }, 2000)
 }
+
 
 
 
